@@ -1,0 +1,38 @@
+
+#"Benutzername" : "ultratest",
+#"Passwort" : "ultratest",
+
+"Benutzername" : "haha880",
+"Passwort" : "asdfjklp",
+"Host": "http://www.bundeskampf.com/",
+#"Benutzername" : "BinWirklichToll",
+#"Passwort" : "asdfasdf",
+
+#"Benutzername" : "googleasdf",
+#"Passwort" : "asdfasdf",
+
+
+#"Benutzername" : "",
+#"Passwort" : "asdfjklp",
+
+"Ausgabe": 2,
+"Angriff nochmal":44,
+
+"Info Pfad":".",
+
+"Plan0q":[
+{"Aussendienst":{"Stufe":1, "Medizin":99}},
+{"Minuten":1},
+{"Bank":0},
+{"Minuten":1},
+{"Minuten":1},
+{"Minuten":1}
+],
+
+"Plan1":[
+{"Kampf":"FBGFML"},
+{"Bank":0},
+{"Angriff":{"Medizin":50}},
+{"Bank":0},
+{"Bank":0}
+]

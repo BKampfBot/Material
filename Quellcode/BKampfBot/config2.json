@@ -1,0 +1,41 @@
+
+"Benutzername" : "ultratest",
+"Passwort" : "ultratest",
+"Host": "http://www.bundeskampf.com/",
+
+#"Benutzername" : "BinWirklichToll",
+#"Passwort" : "asdfasdf",
+
+#"Benutzername" : "googleasdf",
+#"Passwort" : "asdfasdf",
+
+
+#"Benutzername" : "",
+#"Passwort" : "asdfjklp",
+
+"Ausgabe": 2,
+"Angriff nochmal":44,
+
+"Info Pfad":".",
+
+"Plan01":[
+{"Aussendienst":{"Stufe":1, "Medizin":50}},
+{"Minuten":1},
+{"Bank":0},
+{"Minuten":1},
+{"Minuten":1},
+{"Minuten":1}
+],
+
+"Plan1":[
+{"Boese":1},
+{"Boese":1},
+{"Boese":1},
+{"Boese":1},
+{"Angriff":{"Medizin":50}},
+{"Bank":0},
+{"Minuten":1},
+{"Minuten":1},
+{"Minuten":1},
+{"Minuten":1}
+]
