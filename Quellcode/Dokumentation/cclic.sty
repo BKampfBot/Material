@@ -1,0 +1,140 @@
+\ProvidesPackage{cclic}
+    [2006/10/26 v1.0 Templates for Creative Commons licenses]
+\NeedsTeXFormat{LaTeX2e}[1999/12/01]
+\RequirePackage{graphicx}
+\RequirePackage{url}
+
+\newlength{\cclicimgheight}
+\setlength{\cclicimgheight}{15mm}
+\newcommand{\cclicsetpagestyle}{\thispagestyle{empty}}
+
+\newcommand{\cclicpage}[5]{%
+\clearpage%
+\cclicsetpagestyle%
+\begin{center}
+\includegraphics[height=\cclicimgheight]{cclogo} \\
+\vspace{0.25\cclicimgheight}
+{\Large Commons Deed} \\
+\vspace{0.25\cclicimgheight}
+{\small #1} % Name
+\end{center}
+\vfill
+Es ist Ihnen gestattet:
+
+\begin{itemize}
+#2
+\end{itemize}
+
+Zu den folgenden Bedingungen:
+
+\begin{itemize}
+#3
+\item Im Falle einer Verbreitung müssen Sie anderen die Lizenzbedingungen, unter die dieser Inhalt fällt, mitteilen.
+\item Jede der vorgenannten Bedingungen kann aufgehoben werden, sofern Sie die Einwilligung des Rechteinhabers dazu erhalten.
+\item Diese Lizenz lässt die Urheberpersönlichkeitsrechte unberührt.
+\end{itemize}
+
+Das Commons Deed ist eine Zusammenfassung des Lizenzvertrags in all\-ge\-mein\-ver\-ständ\-li\-cher Sprache.
+Um den Lizenzvertrag einzusehen, besuchen Sie die Seite
+\begin{center}\url{#4}\end{center}
+\noindent oder senden Sie einen Brief an Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+\vfill
+\begin{center}
+#5
+\end{center}
+\clearpage
+}
+
+\newcommand{\ccbyncnd}{
+  \cclicpage{
+    Namensnennung - Keine kommerzielle Nutzung - Keine Bearbeitung 3.0
+  }{
+  \item das Werk vervielfältigen, verbreiten und öffentlich zugänglich machen
+  }{
+  \item \emph{Namensnennung.} Sie müssen den Namen des Autors/Rechtsinhabers in der von ihm festgelegten Weise nennen.
+  \item \emph{Keine kommerzielle Nutzung.} Dieses Werk darf nicht für kommerzielle Zwecke verwendet werden.
+  \item \emph{Keine Bearbeitung.} Dieses Werk darf nicht bearbeitet oder in anderer Weise verändert werden.
+  }{http://creativecommons.org/licenses/by-nc-nd/3.0/de/}{
+  \includegraphics[height=\cclicimgheight]{ccby}
+  \includegraphics[height=\cclicimgheight]{ccnceu}
+  \includegraphics[height=\cclicimgheight]{ccnd}
+  }
+}
+
+\newcommand{\ccbyncsa}{
+  \cclicpage{
+    Namensnennung - Keine kommerzielle Nutzung - Weitergabe unter gleichen Bedingungen 3.0
+  }{
+  \item das Werk zu vervielfältigen, zu verbreiten und öffentlich zugänglich zu machen
+  \item Abwandlungen bzw. Bearbeitungen des Inhaltes anzufertigen
+  }{
+  \item \emph{Namensnennung.} Sie müssen den Namen des Autors/Rechtsinhabers in der von ihm festgelegten Weise nennen.
+  \item \emph{Keine kommerzielle Nutzung.} Dieser Inhalt darf nicht für kommerzielle Zwecke verwendet werden.
+  \item \emph{Weitergabe unter gleichen Bedingungen.} Wenn Sie den lizenzierten Inhalt bearbeiten oder in anderer Weise umgestalten, verändern oder als Grundlage für einen anderen Inhalt verwenden, dürfen Sie den neu entstandenen Inhalt nur unter Verwendung von Lizenzbedingungen weitergeben, die mit denen dieses Lizenzvertrages identisch oder vergleichbar sind.
+  }{http://creativecommons.org/licenses/by-nc-sa/3.0/de/}{
+  \includegraphics[height=\cclicimgheight]{ccby}
+  \includegraphics[height=\cclicimgheight]{ccnceu}
+  \includegraphics[height=\cclicimgheight]{ccsa}
+  }
+}
+
+\newcommand{\ccbync}{
+  \cclicpage{
+    Namensnennung - Keine kommerzielle Nutzung 3.0
+  }{
+  \item das Werk vervielfältigen, verbreiten und öffentlich zugänglich machen
+  \item Abwandlungen bzw. Bearbeitungen des Inhaltes anfertigen
+  }{
+  \item \emph{Namensnennung.} Sie müssen den Namen des Autors/Rechtsinhabers in der von ihm festgelegten Weise nennen.
+  \item \emph{Keine kommerzielle Nutzung.} Dieser Inhalt darf nicht für kommerzielle Zwecke verwendet werden.
+  }{http://creativecommons.org/licenses/by-nc/3.0/de/}{
+  \includegraphics[height=\cclicimgheight]{ccby}
+  \includegraphics[height=\cclicimgheight]{ccnceu}
+  }
+}
+
+\newcommand{\ccbynd}{
+  \cclicpage{
+    Namensnennung - Keine Bearbeitung 3.0
+  }{
+  \item das Werk vervielfältigen, verbreiten und öffentlich zugänglich machen
+  }{
+  \item \emph{Namensnennung.} Sie müssen den Namen des Autors/Rechtsinhabers in der von ihm festgelegten Weise nennen.
+  \item \emph{Keine Bearbeitung.} Dieses Werk darf nicht bearbeitet oder in anderer Weise verändert werden.
+  }{http://creativecommons.org/licenses/by-nd/3.0/de/}{
+  \includegraphics[height=\cclicimgheight]{ccby}
+  \includegraphics[height=\cclicimgheight]{ccnd}
+  }
+}
+
+\newcommand{\ccbysa}{
+  \cclicpage{
+    Namensnennung - Weitergabe unter gleichen Bedingungen 3.0
+  }{
+  \item das Werk vervielfältigen, verbreiten und öffentlich zugänglich machen
+  \item Abwandlungen bzw. Bearbeitungen des Inhaltes anfertigen
+  }{
+  \item \emph{Namensnennung.} Sie müssen den Namen des Autors/Rechtsinhabers in der von ihm festgelegten Weise nennen.
+  \item \emph{Weitergabe unter gleichen Bedingungen.} Wenn Sie den lizenzierten Inhalt bearbeiten oder in anderer Weise umgestalten, verändern oder als Grundlage für einen anderen Inhalt verwenden, dürfen Sie den neu entstandenen Inhalt nur unter Verwendung von Lizenzbedingungen weitergeben, die mit denen dieses Lizenzvertrages identisch oder vergleichbar sind.
+  }{http://creativecommons.org/licenses/by-sa/3.0/de/}{
+  \includegraphics[height=\cclicimgheight]{ccby}
+  \includegraphics[height=\cclicimgheight]{ccsa}
+  }
+}
+
+\newcommand{\ccby}{
+  \cclicpage{
+    Namensnennung 3.0
+  }{
+  \item das Werk vervielfältigen, verbreiten und öffentlich zugänglich machen
+  \item Abwandlungen bzw. Bearbeitungen des Inhaltes anfertigen
+  }{
+  \item \emph{Namensnennung.} Sie müssen den Namen des Autors/Rechtsinhabers in der von ihm festgelegten Weise nennen.
+  }{http://creativecommons.org/licenses/by/3.0/de/}{
+  \includegraphics[height=\cclicimgheight]{ccby}
+  }
+}
+
+
+\endinput
+%% End
