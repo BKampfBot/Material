@@ -1,0 +1,13 @@
+# Nur leichte Außendienste, wenn fertig,
+# regelmäßig prüfen, ob es schon ein
+# neuer Tag ist und dann wieder Außendienste
+
+"Benutzername":"meinName",
+"Passwort":"geheim",
+"Ausgabe":2,
+"Außendienst verfügbar":[
+	{"Außendienst":0}
+],
+"Kein Außendienst":[
+	{"Minuten":30}
+]

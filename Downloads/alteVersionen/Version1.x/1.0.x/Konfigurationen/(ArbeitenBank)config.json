@@ -1,0 +1,9 @@
+"Benutzername":"meinName",
+"Passwort":"geheim",
+"Ausgabe":2,
+"Außendienst verfügbar":[
+],
+"Kein Außendienst":[
+	{"Arbeiten":1},
+	{"Bank":0}
+]

@@ -1,0 +1,18 @@
+# Dies ist eine minimale Datei. Mit den richtigen Login-Daten koennen
+# die Tagesmodi, wie zum Beispiel das Quiz, die Lose und das Lotto
+# genutzt werden.
+#
+# Fuer weitere Hinweise zu der Konfigurationsdatei bitte die zugehoerige
+# Dokumentation lesen.
+#
+# http://bundeskampf.georf.de
+
+"Benutzername":"meinName",
+"Passwort":"geheim",
+"Ausgabe":2,
+
+"Plan0":[
+],
+
+"Plan1":[
+]

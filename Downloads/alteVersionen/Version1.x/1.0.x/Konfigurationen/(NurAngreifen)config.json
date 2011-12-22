@@ -1,0 +1,11 @@
+# Keine Außendienste;
+# Nur Angreifen, gleiche Stufe, im Verein.
+
+"Benutzername":"meinName",
+"Passwort":"geheim",
+"Ausgabe":2,
+"Außendienst verfügbar":[
+],
+"Kein Außendienst":[
+	{"Angriff":{"Stufe":0,"Verein":1}}
+]

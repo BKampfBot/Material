@@ -1,0 +1,12 @@
+# Alle schweren Außendienste machen und dann Programm beenden
+
+"Benutzername":"meinName",
+"Passwort":"geheim",
+"Ausgabe":2,
+"Außendienst verfügbar":[
+	{"Außendienst":1}
+],
+"Kein Außendienst":[
+	{"Stopp":true}
+]
+

@@ -1,0 +1,21 @@
+# Dies ist schon ein bisschen komplizierter. Man kann das Programm auch
+# von der Webseite bedienen
+
+"Benutzername":"meinName",
+"Passwort":"geheim",
+"Ausgabe":2,
+"Außendienst verfügbar":[
+# Zuerst alle Außendienste machen
+	{"Außendienst":0},
+# Das Geld sofort auf die Bank
+	{"Bank"},
+# Gucken ob ein Befehl in der Beschreibung steht
+	{"Beschreibung":true}
+],
+
+"Kein Außendienst":[
+# Angreifen bis zum Morgen
+	{"Angriff":{"Stufe":-1,"Verein":1}},
+# Gucken ob ein Befehl in der Beschreibung steht
+	{"Beschreibung":true}
+]

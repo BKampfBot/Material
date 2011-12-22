@@ -1,0 +1,98 @@
+# Dies ist eine sinnlose Datei, wo allerdings alle Möglichkeiten
+# aufgefuehrt werden. Mit den richtigen Login-Daten koennen
+# die Tagesmodi, wie zum Beispiel das Quiz, die Lose und das Lotto
+# genutzt werden.
+#
+# Fuer weitere Hinweise zu der Konfigurationsdatei bitte die zugehoerige
+# Dokumentation lesen.
+#
+# http://bundeskampf.georf.de
+
+
+"Benutzername": "meinName",
+"Passwort": "geheim",
+"Host": "http://www.example.com/",
+"Ausgabe": 1,
+"Angriff nochmal": 50,
+"Info Pfad": "ausgabe/",
+"Mehr Aussendienste": 3,
+"Zeitfaktor": 2.5,
+"Useragent": "BKampfBot",
+"Vorausschauen": true,
+"Plan0": [
+	{
+		"Angriff": {
+			"Stufe": 0,
+			"Verein": 0,
+			"Respekt": {
+				"Min": 1000,
+				"Max": 10000
+			},
+			"Medizin": 40,
+			"Freunde": true
+		}
+	},
+	{
+		"Arbeiten": {
+			"Stunden": 10,
+			"Stopp": false
+		}
+	},
+	{
+		"Aussendienst": {
+			"Stufe": 1,
+			"Medizin": 50
+		}
+	},
+	{
+		"Beschreibung": "Ich bin fertig damit"
+	},
+	{
+		"Bank": 300
+	},
+	{
+		"Befehl": true
+	},
+	{
+		"Booster": 6
+	},
+	{
+		"BoeseBeute": {
+			"nochmal": 40,
+			"Medizin": 50
+		}
+	},
+	{
+		"BoeseKrieg": {
+			"nochmal": 40,
+			"Medizin": 50
+		}
+	},
+	{
+		"BoeseRespekt": {
+			"nochmal": 40,
+			"Medizin": 50
+		}
+	},
+	{
+		"Golden": {
+			"Medizin": 50
+		}
+	},
+	{
+		"Kampf": {
+			"Gegner": "_wolf_",
+			"Medizin": 40
+		}
+	},
+	{
+		"Minuten": 4
+	},
+	{
+		"Neustart": true
+	},
+	{
+		"Stopp": true
+	}
+],
+"Plan1": []
