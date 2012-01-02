@@ -1,28 +1,29 @@
-# Dies ist eine minimale Datei. Mit den richtigen Login-Daten koennen
-# die Tagesmodi, wie zum Beispiel das Quiz, die Lose und das Lotto
-# genutzt werden.
-#
-# Fuer weitere Hinweise zu der Konfigurationsdatei bitte die zugehoerige
-# Dokumentation lesen.
-#
-# http://bundeskampf.georf.de
+{
 
-"Benutzername":"meinName",
-"Passwort":"geheim",
+"@": "Dies ist eine minimale Konfigurationsdatei. Mit den richtigen",
+"@": "Login-Daten koennen die Tagesmodi, wie zum Beispiel das Quiz,",
+"@": "die Lose und das Lotto genutzt werden.",
 
-# Hier muss die Domain des Spiels rein
+"@": "Fuer weitere Hinweise zu der Konfigurationsdatei bitte die",
+"@": "zugehoerige Dokumentation lesen.",
+
+"@": "https://github.com/BKampfBot/Material/wiki",
+"@": "http://bundeskampf.georf.de",
+
+
+"@": "Deine Login-Daten",
+"Benutzername": "meinName",
+"Passwort":     "geheim",
+
+"@": "Hier muss die Domain des Spiels rein",
 "Host":"http://www.example.com/",
 
-# Menge der Ausgabe des Programms
-# 0 = Nur Fehler
-# 1 = Normal
-# 2 = Alle Ausgaben
-"Ausgabe":1,
-
-# Plan, falls Aussendienste verfuegbar sind
+"@": "Plan, falls Aussendienste verfuegbar sind",
 "Plan0":[
 ],
 
-# Plan, falls keine Aussendienste verfuegbar sind
+"@": "Plan, falls keine Aussendienste verfuegbar sind",
 "Plan1":[
 ]
+
+}
