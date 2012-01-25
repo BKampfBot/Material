@@ -1,9 +1,11 @@
 #!/bin/bash
 
 
-# get the dirname
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cd $DIR
+# cd into dir
+
+DIR=$( dirname "${BASH_SOURCE[0]}" )
+cd "$DIR"
+DIR=$(pwd)
 
 
 # Zuerst wird überprueft ob die nötigen Datein vorhanden sind
@@ -23,21 +25,19 @@ auswahl() {
 
 echo ""
 echo "Bitte waehlen Sie eine Aktion:"
-echo " 1) Normaler Start mit Plaenen"
-echo " 2) los-Modus (Rubbellos)"
-echo " 3) quiz-Modus (Tagesquiz)"
-echo " 4) glueck-Modus (Gluecksrad)"
-echo " 5) wein-Modus (Weinfaesser)"
-echo " 6) spiel-Modus (Tagesspiel)"
-echo " 7) lotto-Modus (Lottonummern)"
-echo " 8) jagd-Modus (Woerterjagd)"
-echo " 9) Hilfe"
-echo " 0) Beenden"
+echo " 1) Normaler Start       9) Hilfe"
+echo " 2) Rubbellos           10) Proxytest"
+echo " 3) Tagesquiz           11) Pins"
+echo " 4) Gluecksrad          12) Beenden"
+echo " 5) Weinfaesser"
+echo " 6) Tagesspiel           0) Beenden"
+echo " 7) Lottonummern"
+echo " 8) Woerterjagd"
 echo ""
 
-read -p "Nummer eingeben:" MODUS
+read -p "Nummer eingeben: " MODUS
 
-case "$MODUS" in 
+case "$MODUS" in
 	"1")
 		java -jar BKampfBot.jar
 		;;
@@ -65,14 +65,36 @@ case "$MODUS" in
 	"9")
 		java -jar BKampfBot.jar --help
 		;;
+	"10")
+		java -jar BKampfBot.jar testproxy
+		;;
+	"11")
+		pins
+		;;
+	"12")
+		exit 0
+		;;
 	"0")
 		exit 0
 		;;
 	*)
-		auswahl
 		;;
 esac
 auswahl
+}
+
+
+pins() {
+echo ""
+echo "Bitte Pins mit Komma abgetrennt angeben. Weitere Informationen"
+echo "dazu gibt es unter http://www.georf.de/bundeskampf-pins/"
+echo ""
+
+read -p "pins=" PINS
+
+if [ "$PINS" != "" ] ; then
+	java -jar BKampfBot.jar pins=$PINS
+fi
 }
 
 auswahl

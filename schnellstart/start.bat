@@ -1,26 +1,26 @@
 @echo off
 
-:: Zuerst wird Ã¼berprueft ob die nÃ¶tigen Datein vorhanden sind
-::if not exist BKampfBot.jar goto error1
-::if not exist config.json goto error2
+:: Zuerst wird überprueft ob die nötigen Datein vorhanden sind
+
+if not exist BKampfBot.jar goto error1
+if not exist config.json goto error2
 
 :auswahl
 echo.
 echo Bitte waehlen Sie eine Aktion:
-echo  1) Normaler Start mit Plaenen
-echo  2) los-Modus (Rubbellos)
-echo  3) quiz-Modus (Tagesquiz)
-echo  4) glueck-Modus (Gluecksrad)
-echo  5) wein-Modus (Weinfaesser)
-echo  6) spiel-Modus (Tagesspiel)
-echo  7) lotto-Modus (Lottonummern)
-echo  8) jagd-Modus (Woerterjagd)
-echo  9) Hilfe
-echo  0) Beenden
+echo   1) Normaler Start       9) Hilfe
+echo   2) Rubbellos           10) Proxytest
+echo   3) Tagesquiz           11) Pins
+echo   4) Gluecksrad          12) Beenden
+echo   5) Weinfaesser
+echo   6) Tagesspiel           0) Beenden
+echo   7) Lottonummern
+echo   8) Woerterjagd
 echo.
 
 :: Es folgt die Abfrage was zu tun ist
-set /p MODUS=Nummer eingeben:
+set /p MODUS=Nummer eingeben: 
+
 if "%MODUS%" == "1" (
 	java -jar BKampfBot.jar
 ) else if "%MODUS%" == "2" (
@@ -39,6 +39,12 @@ if "%MODUS%" == "1" (
 	java -jar BKampfBot.jar jagd
 ) else if "%MODUS%" == "9" (
 	java -jar BKampfBot.jar --help
+) else if "%MODUS%" == "10" (
+	java -jar BKampfBot.jar testproxy
+) else if "%MODUS%" == "11" (
+	goto pins
+) else if "%MODUS%" == "12" (
+	goto END
 ) else if "%MODUS%" == "0" (
 	goto END
 ) else goto auswahl
@@ -59,6 +65,19 @@ echo.
 goto END
 
 
+:pins
+
+echo.
+echo Bitte Pins mit Komma abgetrennt angeben. Weitere Informationen
+echo dazu gibt es unter http://www.georf.de/bundeskampf-pins/
+echo.
+
+set /p PINS=pins=
+
+if not "%PINS%"=="" (
+	java -jar BKampfBot.jar pins=%PINS%
+)
+goto auswahl
 
 :END
 pause
