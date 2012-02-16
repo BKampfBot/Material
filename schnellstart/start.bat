@@ -22,25 +22,25 @@ echo.
 set /p MODUS=Nummer eingeben: 
 
 if "%MODUS%" == "1" (
-	java -jar BKampfBot.jar
+	chcp 65001>nul && java -jar BKampfBot.jar
 ) else if "%MODUS%" == "2" (
-	java -jar BKampfBot.jar los
+	chcp 65001>nul && java -jar BKampfBot.jar los
 ) else if "%MODUS%" == "3" (
-	java -jar BKampfBot.jar quiz
+	chcp 65001>nul && java -jar BKampfBot.jar quiz
 ) else if "%MODUS%" == "4" (
-	java -jar BKampfBot.jar glueck
+	chcp 65001>nul && java -jar BKampfBot.jar glueck
 ) else if "%MODUS%" == "5" (
-	java -jar BKampfBot.jar wein
+	chcp 65001>nul && java -jar BKampfBot.jar wein
 ) else if "%MODUS%" == "6" (
-	java -jar BKampfBot.jar spiel
+	chcp 65001>nul && java -jar BKampfBot.jar spiel
 ) else if "%MODUS%" == "7" (
-	java -jar BKampfBot.jar lotto
+	chcp 65001>nul && java -jar BKampfBot.jar lotto
 ) else if "%MODUS%" == "8" (
-	java -jar BKampfBot.jar jagd
+	chcp 65001>nul && java -jar BKampfBot.jar jagd
 ) else if "%MODUS%" == "9" (
-	java -jar BKampfBot.jar --help
+	chcp 65001>nul && java -jar BKampfBot.jar --help
 ) else if "%MODUS%" == "10" (
-	java -jar BKampfBot.jar testproxy
+	chcp 65001>nul && java -jar BKampfBot.jar testproxy
 ) else if "%MODUS%" == "11" (
 	goto pins
 ) else if "%MODUS%" == "12" (
@@ -75,7 +75,7 @@ echo.
 set /p PINS=pins=
 
 if not "%PINS%"=="" (
-	java -jar BKampfBot.jar pins=%PINS%
+	chcp 65001>nul && java -jar BKampfBot.jar pins=%PINS%
 )
 goto auswahl
 
